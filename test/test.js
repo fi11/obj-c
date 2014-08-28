@@ -64,7 +64,7 @@ describe('Object', function() {
         expect(o.bar).to.eql('baz');
     });
 
-    it('Should have constructor property and defined', function() {
+    it('Should have constructor and defined property', function() {
         var O = Obj.create(function O1() {
             this.foo = 'bar';
         }, {
@@ -119,5 +119,15 @@ describe('Object', function() {
         };
 
         expect(fn).to.throw(Error);
+    });
+
+    it('Should have parent static properties', function() {
+        var O1 = Obj.create();
+
+        O1.foo = 'bar';
+
+        var O2 = O1.create();
+
+        expect(O2.foo).to.eql('bar');
     });
 });

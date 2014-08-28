@@ -1,0 +1,24 @@
+{
+  "name": "obj-c",
+  "version": "0.0.1",
+  "description": "Simple inherit helper with named constructor",
+  "main": "index",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/fi11/obj-c.git"
+  },
+  "keywords": [
+    "inherit",
+    "class"
+  ],
+  "bugs": {
+    "url": "https://github.com/fi11/obj-c/issues"
+  },
+  "homepage": "https://github.com/fi11/obj-c",
+  "author": "Pavel Silin",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "1.21.4",
+    "chai": "1.9.1"
+  }
+}
